@@ -21,5 +21,12 @@ describe('testing nearest element', () =>{
 		const expected = 12;
 		expect(find_nearest(target, input_arr)).toBe(expected);
 	});
+
+	test('array with two nearest negative', () => {
+		const target = -10;
+		const input_arr = [1, -8, -11, -15, 11, 12, 9, 9, 12, 14];
+		const expected = -11;
+		expect(find_nearest(target, input_arr)).toBe(expected);
+	});
 });
 
